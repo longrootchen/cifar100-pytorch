@@ -39,10 +39,13 @@ Here are some re-implementations of Convolutional Networks on CIFAR-100 dataset.
 | DenseNet-100-BC, k=12 | 22.27 [2] |  |
 | DenseNet-250-BC, k=24 | 17.60 [2] |  |
 | DenseNet-190-BC, k=40 | 17.18 [2] |  |
-
+| SE-ResNet-101 | 23.85 [3] |  |
+| SE-ResNet-164 | 21.31 [3] |  |
 
 ## References
 
 [1] Saining Xie, Ross Girshick, Piotr Dollár, Zhouwen Tu, Kaiming He. Aggregated Residual Transformations for Deep Neural Networks. In CVPR, 2017.
 
 [2] Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger. Densely Connected Convolutional Networks. In CVPR, 2017.
+
+[3] Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu. Squeeze-and-Excitation Networks. In CVPR, 2018.
