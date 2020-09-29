@@ -1,0 +1,27 @@
+# model architecture
+arch: resnext29_8x64d
+num_classes: 100
+
+# hardware
+workers: 4
+gpu: 'cuda:1'
+
+# miscellaneous
+data_root: './datasets'
+save_dir: './checkpoints'
+log_dir: './logs'
+verbose: True
+
+# training
+epochs: 300
+batch_size: 128
+
+# SGD optimizer. Note: nesterov default to False
+lr: 0.1
+weight_decay: 0.0005
+momentum: 0.9
+nesterov: True
+
+# MultiStepLR scheduler
+gamma: 0.1
+milestones: [150, 225]
