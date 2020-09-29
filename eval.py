@@ -15,8 +15,8 @@ from utils import Evaluator
 warnings.filterwarnings('ignore')
 
 
-def eval(args, device, model, test_loader, vis_conf_mat=False, save_conf_mat=False):
-    evaluator = Evaluator(args.num_classes)
+def eval(device, model, test_loader, vis_conf_mat=False, save_conf_mat=False):
+    evaluator = Evaluator(100)
 
     model.eval()
     with tqdm(test_loader) as pbar:
@@ -55,10 +55,10 @@ if __name__ == '__main__':
     cfgs = EasyDict(cfgs)
 
     # hardware
-    device = torch.device(args.gpu if torch.cuda.is_available() else 'cpu')
+    device = torch.device(cfgs.gpu if torch.cuda.is_available() else 'cpu')
 
     # get model
-    model = get_model(args)
+    model = get_model(cfgs)
     ckpt_path = os.path.join(args.work_dir, 'checkpoints', args.ckpt_name)
     ckpt = torch.load(ckpt_path)
     if isinstance(ckpt, dict):
