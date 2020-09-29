@@ -8,6 +8,8 @@ Here are some re-implementations of Convolutional Networks on CIFAR-100 dataset.
 
 ## Requirements
 
+- A single TITAN RTX (24G memory) is used.
+
 - Python 3.7+
 
 - PyTorch 1.0+
@@ -24,7 +26,7 @@ Here are some re-implementations of Convolutional Networks on CIFAR-100 dataset.
         
 3. Evaluate a model, taking resnext29_16x64d as an example
 
-        python -u eval.py --arch resnext29_16x64d --num-classes 100 --ckpt-path ./experiments/resnet20/checkpoints/last_checkpoint.pth --gpu cuda:0
+        python -u eval.py --work-dir ./experiments/resnext29_16x64d --ckpt-name last_checkpoint.pth
         
         
 ## Results
