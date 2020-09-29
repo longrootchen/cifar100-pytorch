@@ -22,7 +22,7 @@ Here are some re-implementations of Convolutional Networks on CIFAR-100 dataset.
 
 2. Train a model, taking resnext29_16x64d as an example
 
-        python -u train.py --work-dir ./experiments/resnext29_16x64d
+        python -u train.py --work-dir ./experiments/resnext29_16x64d --resume ./experiments/resnext29_16x64d/checkpoints/last_checkpoint.pth
         
 3. Evaluate a model, taking resnext29_16x64d as an example
 
