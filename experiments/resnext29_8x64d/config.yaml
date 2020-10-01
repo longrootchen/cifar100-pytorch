@@ -4,7 +4,7 @@ num_classes: 100
 
 # hardware
 workers: 4
-gpu: 'cuda:1'
+gpu: 'cuda:0'
 
 # miscellaneous
 data_root: './datasets'
