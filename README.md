@@ -6,6 +6,8 @@ Contact email: imdchan@yahoo.com
 
 Here are some re-implementations of Convolutional Networks on CIFAR-100 dataset.
 
+Note that the training set that consists of 50k training images was divided into 45k/5k train/val split. So I first made stratefied 10-fold split, resulting in the 'train_folds.csv'.
+
 ## Requirements
 
 - A single TITAN RTX (24G memory) is used.
