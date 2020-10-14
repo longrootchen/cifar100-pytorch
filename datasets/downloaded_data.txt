@@ -1,1 +1,0 @@
-Put the downloaded 'cifar-100-python.tar.gz' in this folder.
