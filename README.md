@@ -36,7 +36,7 @@ Note that the training set that consists of 50k training images was divided into
 | Error Rate (%)  | original paper | re-implementation |
 | ----- | ----- | ----- |
 | ResNeXt-29, 8x64d | 17.77 [1] |  |
-| ResNeXt-29, 16x64d | 17.31 [1] |  |
+| ResNeXt-29, 16x64d | 17.31 [1] | 18.75 |
 | DenseNet-100-BC, k=12 | 22.27 [2] |  |
 | DenseNet-250-BC, k=24 | 17.60 [2] |  |
 | DenseNet-190-BC, k=40 | 17.18 [2] |  |
